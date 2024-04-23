@@ -21,8 +21,9 @@ namespace _240423_dolg_autoszalon
 		public override void JarmuInfo()
 		{
 			base.JarmuInfo();
-            Console.WriteLine("");
-        }
+            Console.WriteLine($"Hajtas: {Hajtas}");
+            Console.WriteLine($"Offroad kepessegek: {OffroadKepessegek?"vannak":"nincsenek}");
+		}
 		public void VontatoKepessegBeallitasa(int kepesseg)
 		{
 			VontatoKepesseg = kepesseg;
