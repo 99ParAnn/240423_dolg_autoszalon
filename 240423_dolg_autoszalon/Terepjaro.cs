@@ -22,7 +22,19 @@ namespace _240423_dolg_autoszalon
 		{
 			base.JarmuInfo();
             Console.WriteLine($"Hajtas: {Hajtas}");
-            Console.WriteLine($"Offroad kepessegek: {OffroadKepessegek?"vannak":"nincsenek}");
+			Console.WriteLine($"Vontatokepesseg: {VontatoKepesseg}");
+			if (OffroadKepessegek)
+			{
+				Console.WriteLine($"Offroad kepessegek: van");
+
+			}
+			else
+			{
+			Console.WriteLine($"Offroad kepessegek: nincs");
+
+			}
+
+
 		}
 		public void VontatoKepessegBeallitasa(int kepesseg)
 		{
